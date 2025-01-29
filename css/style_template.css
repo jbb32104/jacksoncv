@@ -1,0 +1,288 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(29, 29, 29);
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Nav Styles */
+nav {
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    background-color: rgb(20, 20, 20);
+    border-bottom: 2px solid rgb(255, 255, 255);
+    font-size: 1.2rem;
+}
+
+nav > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 20vw;
+    height: 75%;
+    background-color: rgb(60, 60, 60);
+    margin: 0;
+    text-decoration: none;
+}
+
+
+nav a:visited {
+    color:rgb(255, 255, 255);
+    font-weight:bolder;
+}
+
+nav a:hover {
+    color:rgb(240, 176, 244);
+}
+
+/* Footer Styles */
+footer {
+    display: flex;
+    width: 100vw;
+    background-color: rgb(19, 19, 19);
+    border-top: 2px solid white;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color:rgb(240, 176, 244);
+}
+
+/* Splash Section */
+.splash {
+    display: flex;
+    flex-basis: 20%;
+    justify-content: space-evenly;
+    gap: 5%;
+    align-items: center;
+    margin: 2vh 2vw;
+}
+
+.splash h1 {
+    font-family: Lexend, sans-serif;
+    font-size: x-large;
+    color: rgb(181, 234, 255);
+    text-decoration: underline;
+}
+
+.splash img {
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    margin-left: 20px;
+    
+}
+
+
+/* Horizontal Rules */
+hr {
+    border-color: rgb(255, 255, 255);
+    border-style: double;
+    border-width: 3px;
+}
+
+/* Sections */
+
+.address {
+    font-weight: lighter;
+    font-style: italic;
+    line-height: 1.5rem;
+}
+
+.tag-line {
+    font-weight: 5;
+}
+
+.sub-content {
+    text-align: center;
+}
+
+.sub-content p {
+    max-width: 20vw;
+
+}
+
+/* Section Headings */
+section h2 {
+    font-family: Lexend, sans-serif;
+    color:rgb(181, 234, 255);
+    text-decoration: underline;
+}
+
+/* Paragraph Styles */
+.paragraphs {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+/* link styles */
+section a {
+    color: rgb(181, 234, 255);
+}
+section a:hover {
+    color: rgb(240, 176, 244);
+}
+
+section a:visited {
+    text-decoration: none;
+}
+
+/* List Styles */
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ul {
+    list-style-type: none;
+    line-height: 2rem;
+}
+
+
+.experience {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Gap between dt-dd pairs */
+    text-align: center;
+}
+
+dl {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Single column for dt and dd */
+    grid-template-rows: 1fr 1fr;
+    justify-items: center; /* Center items horizontally */
+    row-gap: 5px; /* Gap between dt and dd */
+    text-align: center;
+}
+dl dt{
+    font-weight: bold;
+}
+dl dd{
+    margin: 0;
+    font-style: italic;
+
+}
+
+/* Project Section */
+.projects h2 {
+    text-align: center;
+}
+
+.three-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
+    margin: 0 40px;
+    text-align:center;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(105, 105, 105);
+    border-radius: 5%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-shadow: 10px 10px rgb(80, 80, 80);
+}
+
+.card img {
+    height: 150px;
+    border-radius: 5%;
+}
+
+.card h3 {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+/* Contact Page Styles */
+.one-col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+form {
+    background-color: rgb(130, 130, 130);
+    width: 50vw;
+    padding: 20px;
+    border-radius: 10%;
+    justify-self: center;
+    border: 1px solid white;
+}
+
+form input, form textarea {
+    width: 65%;
+    font-size: larger;
+    font-weight: bold;
+}
+
+form input {
+    height: 30px;
+}
+
+form input:focus, form textarea:focus {
+    background-color: aliceblue;
+}
+
+form button {
+    width: 25%;
+    height: 30px;
+    background-color: white;
+    border: none;
+    border-radius: 15%;
+    font-weight: bold;
+    box-shadow: 5px 5px;
+
+}
+
+form button:hover {
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .splash, .paragraphs {
+        flex-direction: column;
+    }
+
+    .paragraphs p {
+        min-width: 80vw;
+    }
+}
+
+@media (max-width: 900px) {
+    .three-col {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+    text-align:center;
+    }
+}
